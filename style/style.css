@@ -55,6 +55,11 @@ del {
     display: none;
 }
 
+hr {
+    border: 1px 0 solid #000;
+    height: 0;
+}
+
 ol li {
     margin: 1.2em 0;
 }
@@ -94,7 +99,7 @@ ol.reasons li {
 }
 
 img.index-compare {
-    width: 680px;
+    width: 600px;
     margin: 0.5em auto;
     text-align: center;
 }
