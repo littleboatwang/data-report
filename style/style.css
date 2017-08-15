@@ -1,0 +1,90 @@
+html {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0 5%;
+    background-image: #000000;
+    background-image: url('../assets/images/cinema-min.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    margin: 2em 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+article {
+    max-width: 900px;
+    margin: 5em auto 0;
+    padding: 0.8em 3.2em;
+    background-color: rgba(255, 255, 255, 0.93);
+
+}
+
+h1 {
+    margin: 0.86em 0;
+    font-size: 2.02em;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0.8em 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+article p {
+    margin: 1.2em 2em;
+    text-indent: 2em;
+    line-height: 1.5em;
+}
+
+small {
+    font-size: 0.8em;
+}
+
+del {
+    display: none;
+}
+
+ol li {
+    margin: 1.2em 0;
+}
+
+ol p {
+    margin: 0.6em 0 0.6em 0.5em;
+    text-indent: 0;
+}
+
+ol.reasons {
+    padding: 0 6em;
+}
+
+ol.reasons li {
+    margin: 0.4em 0;
+}
+
+.title {
+    margin: 1.6em auto 0.4em;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 3px 5px #000;
+}
+
+.authors, .teacher {
+    margin: 0.8em auto 0.1em;
+    font-size: 1.12em;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 2px #000;
+    text-align: center;
+}
+
+.chart {
+    display: none;
+}
