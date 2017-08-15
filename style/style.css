@@ -92,3 +92,9 @@ ol.reasons li {
 .chart {
     display: none;
 }
+
+img.index-compare {
+    width: 680px;
+    margin: 0.5em auto;
+    text-align: center;
+}
