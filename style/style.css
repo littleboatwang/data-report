@@ -7,19 +7,19 @@ body {
     margin: 0;
     padding: 0 5%;
     background-image: #000000;
-    background-image: url('../assets/images/cinema-min.jpg');
+    background-image: url('../assets/images/cinema.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
 
 header {
-    margin: 2em 0;
+    margin: 2.6em 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 article {
     max-width: 900px;
-    margin: 5em auto 0;
+    margin: 4em auto 0;
     padding: 0.8em 3.2em;
     background-color: rgba(255, 255, 255, 0.93);
 
@@ -44,7 +44,7 @@ article p {
 }
 
 small {
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 del {
@@ -70,7 +70,7 @@ ol.reasons li {
 
 .title {
     margin: 1.6em auto 0.4em;
-    font-size: 4em;
+    font-size: 3.2em;
     font-weight: bold;
     text-align: center;
     color: #fff;
