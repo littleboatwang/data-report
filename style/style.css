@@ -20,9 +20,8 @@ header {
 article {
     max-width: 900px;
     margin: 4em auto 0;
-    padding: 0.8em 3.2em;
+    padding: 2.5em 3em;
     background-color: rgba(255, 255, 255, 0.93);
-
 }
 
 h1 {
@@ -43,12 +42,9 @@ article p {
     line-height: 1.5em;
 }
 
-iframe {
-    margin: 1.5em auto;
-}
-
 small {
-    font-size: 0.7em;
+    font-size: 0.64em;
+    letter-spacing: 0;
 }
 
 del {
@@ -56,8 +52,10 @@ del {
 }
 
 hr {
-    border: 1px 0 solid #000;
+    border: 1px 0 dashed #000;
+    margin: 2em auto;
     height: 0;
+    width: 80%;
 }
 
 ol li {
@@ -79,9 +77,10 @@ ol.reasons li {
 
 .title {
     margin: 1.6em auto 0.4em;
-    font-size: 3.2em;
+    font-size: 3.6em;
     font-weight: bold;
     text-align: center;
+    letter-spacing: 0.15em;
     color: #fff;
     text-shadow: 3px 3px 5px #000;
 }
@@ -94,12 +93,21 @@ ol.reasons li {
     text-align: center;
 }
 
-.chart {
-    display: none;
-}
-
 img.index-compare {
     width: 600px;
     margin: 0.5em auto;
     text-align: center;
+}
+
+iframe {
+    margin: 1.5em auto;
+}
+
+.chart {
+    margin: 1em auto;
+}
+
+#schedule-provinces {
+    width: 700px;
+    height: 500px;
 }
