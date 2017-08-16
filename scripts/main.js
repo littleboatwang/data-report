@@ -1,4 +1,4 @@
-var scheduleProvinces = echarts.init(document.getElementById('schedule-provinces'));
+var chartScheduleProvinces = echarts.init(document.getElementById('schedule-provinces'));
 
 var optionScheduleProvinces = {
     title: {
@@ -59,29 +59,106 @@ var optionScheduleProvinces = {
     ]
 }
 
-scheduleProvinces.setOption(optionScheduleProvinces);
+chartScheduleProvinces.setOption(optionScheduleProvinces);
 
 
+var chartTrendsOfYuanfen = echarts.init(document.getElementById('trends-of-yuanfen'));
 
-
-var option = {
+var optionTrensOfYuanfen = {
     title: {
-        text: '不同省份《缘分》的排片率',
+        text: '《缘分》的日票房和排片率走势图',
         top: 'top',
         left: 'center'
     },
-    tooltip: {},
+    tooltip: {
+        trigger: 'axis'
+    },
     legend: {
-        show: false,
-        data: ['销量']
+        data: ['票房', '排片率'],
+        bottom: 'bottom',
+        left: 'center'
     },
-    xAxis: {
-        data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
-    },
-    yAxis: {},
-    series: [{
-        name: '销量',
-        type: 'bar',
-        data: [5, 20, 36, 10, 10, 20]
-    }]
+    xAxis: [{
+        type: 'category',
+        boundryGap: false,
+        data: ['3月25日', '3月26日', '3月27日', '3月28日', '3月29日', '3月30日', '4月1日', '4月2日', '4月3日', '4月4日', '4月5日', '4月6日', '4月7日', '4月8日', '4月9日']
+    }],
+    yAxis: [{
+        type: 'value',
+        name: '票房'
+    }, {
+        type: 'value',
+        name: '排片率'
+    }],
+    series: [
+        // 由于中间有数据缺失，这里忽略了12号和20号的数据
+        {
+            name: '票房',
+            type: 'line',
+            yAxisIndex: 0,
+            data: [428430, 457721, 412363, 227165, 209777, 197774, 191887, 121017, 57357, 50651, 36999, 13675, 14198, 12172, 4498, 5700]
+        },
+        {
+            name: '排片率',
+            type: 'line',
+            yAxisIndex: 1,
+            data: [9.196855402, 8.763812663, 8.53588914, 9.543859697, 9.280952437, 9.476190549, 9.53192495, 5.61135138, 6.600000042, 6.98350519, 7.266666694, 7.063855499, 7.579120895, 6.921839144, 8.056410288, 7.361764736]
+        }
+    ]
 };
+
+chartTrendsOfYuanfen.setOption(optionTrensOfYuanfen);
+
+
+var chartReasons = echarts.init(document.getElementById('reasons'));
+
+optionReasons = {
+    title: {
+        text: '2016年上半年电影重映背后的原因',
+        top: 'top',
+        left: 'center'
+    },
+    tooltip: {
+        trigger: 'item'
+    },
+    legend: {
+        data: []
+    },
+    series: [
+        {
+            name: '原因',
+            type: 'pie',
+            radius: '55%',
+            data: [
+                {name: '1', value: 3},
+                {name: '2', value: 2},
+                {name: '3', value: 9},
+                {name: '4', value: 56},
+                {name: '5', value: 1},
+                {name: '6', value: 6},
+                {name: '7', value: 18}
+            ]
+        }
+    ]
+}
+
+chartReasons.setOption(optionReasons);
+
+
+var chartBoxes = echarts.init(document.getElementById('boxes-2016'));
+
+optionBoxes = {
+    title: {
+        text: '2016年电影票房',
+        subtext: '同时按新上映与重映、好片与烂片进行对比',
+        top: 'top',
+        left: 'center'
+    },
+    series: [
+        {
+
+        }
+    ]
+}
+
+chartBoxes.setOption(optionBoxes);
