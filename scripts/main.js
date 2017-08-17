@@ -222,17 +222,13 @@ var optionBoxes = {
     },
     series: [
         {
+            name: '电影票房',
             type: 'treemap',
             roam: false,
             visibleMin: 300,
             label: {
                 show: true,
                 formatter: '{b}'
-            },
-            itemStyle: {
-                normal: {
-                    borderColor: '#fff'
-                }
             },
             levels: [
                 {
@@ -260,9 +256,33 @@ var optionBoxes = {
                     }
                 }
             ],
-            data: [
-
-            ]
+            data: [{
+                name: '新上映',
+                children: [{
+                    name: '好片',
+                    children: [
+                        {name: '美人鱼', value: 684816852}, {name: '疯狂动物城', value: 252757245}, {name: '魔兽', value: 237471311}, {name: '西游记之孙悟空三打白骨精', value: 233766663}, {name: '美国队长3', value: 203145867}, {name: '奇幻森林', value: 162057687}, {name: '叶问3', value: 134961140}, {name: 'X战警：天启', value: 129307891}, {name: '北京遇上西雅图之不二情书', value: 127646219}, {name: '功夫熊猫3', value: 102680344}, {name: '蝙蝠侠大战超人：正义黎明', value: 99890321}, {name: '惊天魔盗团2', value: 83831133}, {name: '愤怒的小鸟', value: 83306127}, {name: '独立日：卷土重来', value: 66700689}, {name: '爱丽丝梦游仙境2：镜中奇遇记', value: 63584084}, {name: '荒野猎人', value: 62209839}, {name: '火锅英雄', value: 58128707}, {name: '伦敦陷落', value: 56933823}, {name: '我的特工爷爷', value: 54090797}, {name: '绝地逃亡', value: 50632165}, {name: '海底总动员2：多莉去哪儿', value: 38720209}, {name: '寒战2', value: 37030970}, {name: '神战：权力之眼', value: 36494905}, {name: '大鱼海棠', value: 35916174}, {name: '谁的青春不迷茫', value: 29837022}, {name: '高跟鞋先生', value: 27695586}, {name: '睡在我上铺的兄弟', value: 21162088}, {name: '忍者神龟2：破影而出', value: 20180122}, {name: '分歧者3：忠诚世界', value: 20108797}, {name: '猎神：冬日之战', value: 17744233}, {name: '泰山归来：险战丛林', value: 16582519}, {name: '火影忍者剧场版：博人传', value: 16042860}, {name: '三人行', value: 15728071}, {name: '超脑48小时', value: 15223189}, {name: '百鸟朝凤', value: 14688865}, {name: '赏金猎人', value: 14347805}, {name: '陆垚知马俐', value: 12758908}, {name: '过年好', value: 8326210}, {name: '冰河追凶', value: 7010865}, {name: '哆啦A梦：新·大雄的日本诞生', value: 6382590}, {name: '圣斗士星矢', value: 6006488}, {name: '幻体：续命游戏', value: 5927687}, {name: '大唐玄奘', value: 5712746}, {name: '年兽大作战', value: 5678009}, {name: '垫底辣妹', value: 5629723}, {name: '刑警兄弟', value: 5448157}, {name: '熊出没之熊心归来', value: 4873564}, {name: '谍影特工', value: 4407530}, {name: '鼠来宝4：萌在囧途', value: 4024821}, {name: '惊天大逆转', value: 3940636}, {name: '地心营救', value: 3909522}, {name: '爱宠大机密', value: 3553941}, {name: '废柴特工', value: 3477958}, {name: '神秘世界历险记3', value: 3188620}, {name: '快手枪手快枪手', value: 3123646}, {name: '星球大战：原力觉醒', value: 3050718}, {name: '灵偶契约', value: 2934025}, {name: '托马斯和朋友们：多多岛之迷失宝藏', value: 2684205}, {name: '摇滚藏獒', value: 2374294}, {name: '天亮之前', value: 2118437}, {name: '再见，在也不见', value: 1895176}, {name: '唐人街探案', value: 1834656}, {name: '纽约纽约', value: 1670122}, {name: '最后的巫师猎人', value: 1457981}, {name: '洛杉矶捣蛋计划', value: 1338662}, {name: '云中行走', value: 1211895}, {name: '猫脸老太太', value: 1055775}, {name: '飞鹰艾迪', value: 934271}, {name: '哪一天我们会飞', value: 914823}, {name: '老炮儿', value: 786611}, {name: '寻龙诀', value: 767883}, {name: '发条城市', value: 695045}, {name: '青蛙王国之冰冻大冒险', value: 635243}, {name: '箭士柳白猿', value: 499005}, {name: '刺猬小子之天生我刺', value: 491308}, {name: '我不是王毛', value: 428633}, {name: '六弄咖啡馆', value: 406761}, {name: '情况不妙', value: 393062}, {name: '红色警戒999', value: 375804}, {name: '白毛女', value: 370957}, {name: '超级保镖', value: 347221}, {name: '巴霍巴利王：开端', value: 336222}, {name: '夺命枪火', value: 288036}, {name: '路边野餐', value: 219569}, {name: '老阿姨', value: 146015}, {name: '亡魂复活', value: 144103}, {name: '山那边有匹马', value: 60917}, {name: '终极胜利', value: 42009}, {name: '果宝特攻之水果大逃亡', value: 39403}, {name: '神探夏洛克', value: 22902}, {name: '不朽的时光', value: 15906}, {name: '我的1000万', value: 15450}, {name: '舌尖上的新年', value: 4227}, {name: '白蛇传', value: 4220}, {name: '我的“狐朋狗友”', value: 3563}, {name: '老警', value: 3366}, {name: '冬', value: 2980}, {name: '通灵神探', value: 1710}, {name: '猿创世界之熊孩子部落', value: 1042}, {name: '孙悟空三打白骨精', value: 330}, {name: '过年', value: 230}, {name: '天黑请闭眼', value: 0}, {name: '王者之剑', value: 0}
+                    ]
+                }, {
+                    name: '烂片',
+                    children: [
+                        {name: '澳门风云3', value: 215848850}, {name: '卧虎藏龙：青冥宝剑', value: 40332599}, {name: '致青春·原来你还在这里', value: 22703224}, {name: '封神传奇', value: 17352359}, {name: '魔宫魅影', value: 14554731}, {name: '梦想合伙人', value: 13629789}, {name: '女汉子真爱公式', value: 10962401}, {name: '奔爱', value: 7446639}, {name: '所以……和黑粉结婚了', value: 7240453}, {name: '末日迷踪', value: 5891659}, {name: '夜孔雀', value: 5773443}, {name: '我的新野蛮女友', value: 5705239}, {name: '谋杀似水年华', value: 3399344}, {name: '爱情麻辣烫之情定终身', value: 2886834}, {name: '我和我们', value: 2330920}, {name: '我叫MT之山口山战记', value: 2139206}, {name: '蒸发太平洋', value: 1896389}, {name: '钢刀', value: 1859963}, {name: '筷仙', value: 1831509}, {name: '青蛙总动员', value: 1640634}, {name: '妖医', value: 1518056}, {name: '床下有人3', value: 1514985}, {name: '蜜月酒店杀人事件', value: 1350404}, {name: '笔仙诡影', value: 1253991}, {name: '马小乐之玩具也疯狂', value: 1242470}, {name: '泰迪熊之玩具大战', value: 1182593}, {name: '恐怖将映', value: 1179159}, {name: '糖果世界大冒险', value: 1111528}, {name: '太空熊猫英雄归来', value: 1043332}, {name: '斗龙战士之星印罗盘', value: 1026017}, {name: '超能太阳鸭', value: 1022856}, {name: '恶人报喜', value: 1014813}, {name: '死亡游戏', value: 943559}, {name: '阿里巴巴2所罗门封印', value: 931161}, {name: '宝贝当家', value: 923686}, {name: '诡娃', value: 828486}, {name: '水果宝贝之水果总动员', value: 699464}, {name: '不速之客', value: 665336}, {name: '恐怖禁忌之红旗袍', value: 651326}, {name: '死亡笔记', value: 648770}, {name: '记忆碎片', value: 588290}, {name: '我们毕业啦', value: 547425}, {name: '泡沫之夏', value: 537088}, {name: '大火种', value: 532506}, {name: '笔仙撞碟仙', value: 520504}, {name: '魔轮', value: 486274}, {name: '致我们终将到来的爱情', value: 435910}, {name: '整形师·脸', value: 430916}, {name: '恭喜发财之谈钱说爱', value: 382868}, {name: '半熟少女', value: 380844}, {name: '妄想症', value: 360142}, {name: '动植物大战', value: 351550}, {name: '真相禁区', value: 327157}, {name: '丑小鸭历险记', value: 318876}, {name: '失眠男女', value: 316813}, {name: '我的老婆是明星', value: 275895}, {name: '喜乐长安', value: 264609}, {name: '张震讲故事之合租屋', value: 255650}, {name: '小蚂蚁之环球大冒险', value: 224165}, {name: '恐怖照相机', value: 220814}, {name: '魔都凶音', value: 206291}, {name: '恶灵之门', value: 199496}, {name: '轩辕大帝', value: 198600}, {name: '致命怪谈', value: 158245}, {name: '龙拳小子', value: 157576}, {name: '隔壁惊魂', value: 155056}, {name: '临时约定', value: 140513}, {name: '极限挑战之皇家宝藏', value: 135136}, {name: '夏有乔木雅望天堂', value: 97913}, {name: '海洋之恋', value: 88130}, {name: '回乡逗儿', value: 84799}, {name: '南口1937', value: 70945}, {name: '午夜寻访录', value: 69383}, {name: '别开门', value: 61698}, {name: '消失爱人', value: 59989}, {name: '少年师爷之大禹宝藏', value: 58341}, {name: '恐怖爱情故事之死亡公路', value: 55045}, {name: '练胆儿', value: 53153}, {name: '708090之深圳恋歌', value: 51280}, {name: '古田会议', value: 46987}, {name: '同城邂逅', value: 46921}, {name: '那件疯狂的小事叫爱情', value: 37000}, {name: '当我们年轻的时候', value: 34535}, {name: '谎言大爆炸', value: 31035}, {name: '男神抱抱', value: 30729}, {name: '咕噜咕噜美人鱼', value: 27167}, {name: '提款机', value: 26079}, {name: '绝战', value: 23760}, {name: '当流星划过天际', value: 21396}, {name: '党的女儿尹灵芝', value: 17250}, {name: '一家老小向前冲', value: 14561}, {name: '国酒', value: 14300}, {name: '女神时代', value: 11311}, {name: '毒中毒', value: 11190}, {name: '自我救赎', value: 7150}, {name: '水滴之梦', value: 3220}, {name: '恶棍天使', value: 3125}, {name: '荒村怨灵', value: 2105}, {name: '索命暹罗之按摩师', value: 1000}, {name: '小小校长', value: 375}, {name: '非同小可', value: 250}, {name: '爸爸我来救你了', value: 75}, {name: '山花烂漫时', value: 65}, {name: '风口青春', value: 60}, {name: '情花谷', value: 0}, {name: '爱在深秋', value: 0}
+                    ]
+                }]
+            }, {
+                name: '重映',
+                children: [{
+                    name: '好片',
+                    children: [
+                        {name: '线索', value: 3087000}, {name: '缘份', value: 2467986}, {name: '近在咫尺的爱恋', value: 228497}, {name: '判我有罪', value: 200817}, {name: '鸿门宴传奇', value: 122501}, {name: '寻找心中的你', value: 100961}, {name: '国家利益', value: 77228}, {name: '麦兜当当伴我心', value: 35830}, {name: '我的诗篇', value: 28879}, {name: '北京遇上西雅图', value: 21562}, {name: '智取威虎山', value: 10000}, {name: '爱丽丝梦游仙境', value: 6799}, {name: '心迷宫', value: 6350}, {name: '龙凤呈祥', value: 4268}, {name: '十万个冷笑话', value: 950}, {name: '喜马拉雅天梯', value: 574}, {name: '麦田', value: 495}, {name: '邻家特工', value: 469}, {name: '大闹天宫', value: 380}, {name: '被偷走的那五年', value: 326}, {name: '北京爱情故事', value: 283}, {name: '丛林有情狼', value: 267}, {name: '二子开店', value: 230}, {name: '本命年', value: 230}, {name: '敢死队', value: 214}, {name: '如果·爱', value: 205}, {name: '锦衣卫', value: 200}, {name: '杀生', value: 191}, {name: '大城小事', value: 72}, {name: '闺蜜', value: 60}, {name: '叶问2：宗师传奇', value: 59}, {name: '警察故事2013', value: 55}, {name: '一路惊喜', value: 42}, {name: '我的唐朝兄弟', value: 24}, {name: '恋爱通告', value: 20}, {name: '精英部队2：大敌当前', value: 20}, {name: '神奇侠侣', value: 5}, {name: '决战刹马镇', value: 0}, {name: '大块头有大智慧', value: 0}, {name: '大电影2.0之两个傻瓜的荒唐事', value: 0}, {name: '天地逃生', value: 0}, {name: '完美的爱', value: 0}, {name: '新天生一对', value: 0}, {name: '无人驾驶', value: 0}, {name: '最爱', value: 0}, {name: '武侠', value: 0}, {name: '永无止境', value: 0}, {name: '深夜前的五分钟', value: 0}, {name: '玩命追踪', value: 0}, {name: '赵氏孤儿', value: 0}, {name: '非常营救', value: 0}
+                    ]
+                }, {
+                    name: '烂片',
+                    children: [
+                        {name: '天空的微笑', value: 3060000}, {name: '水墨大别山', value: 2314280}, {name: '摩尔庄园3：魔幻列车大冒险', value: 245937}, {name: '再见我们的十年', value: 162900}, {name: '潜艇总动员3', value: 87000}, {name: '开罗宣言', value: 35063}, {name: '购物女王', value: 32312}, {name: '李三娘', value: 6695}, {name: '王化买父', value: 750}, {name: '京城81号', value: 616}, {name: '爱我就陪我看电影', value: 587}, {name: '意外的恋爱时光', value: 452}, {name: '奔跑吧！兄弟', value: 445}, {name: '回到爱开始的地方', value: 246}, {name: '我是谁2015', value: 210}, {name: '闯堂兔', value: 210}, {name: '闯堂兔2：疯狂马戏团', value: 136}, {name: '宅男总动员', value: 115}, {name: '怖偶', value: 78}, {name: '通灵之六世古宅', value: 68}, {name: '三更车库', value: 63}, {name: '时光恋人', value: 60}, {name: '小时代', value: 40}, {name: '画壁', value: 30}, {name: '丑男大翻身', value: 20}, {name: '我们恋爱吧', value: 20}, {name: '龙骑侠', value: 10}, {name: '三笑之才子佳人', value: 0}, {name: '不爱不散', value: 0}, {name: '分手木马计', value: 0}, {name: '双喜临门', value: 0}, {name: '天际浩劫', value: 0}, {name: '床下有人2', value: 0}, {name: '我只要我们在一起', value: 0}, {name: '我是中国人', value: 0}, {name: '玛德2号', value: 0}, {name: '璀璨的婚礼', value: 0}, {name: '白狐', value: 0}, {name: '荒岛情未了', value: 0}, {name: '落经山', value: 0}, {name: '谍·莲花', value: 0}, {name: '赛尔号大电影之寻找凤凰神兽', value: 0}, {name: '边区造', value: 0}, {name: '门', value: 0}
+                    ]
+                }]
+            }]
         }
     ]
 };
@@ -343,13 +363,11 @@ var optionBoxesOldMovies = {
                     borderColor: '#fff'
                 }
             },
-            levels: [{
-                itemStyle: {
-                    normal: {
-                        gapWidth: 2
-                    }
+            itemStyle: {
+                normal: {
+                    gapWidth: 2
                 }
-            }],
+            },
             data: [
                 {name: '线索', value: 3087000},
                 {name: '天空的微笑', value: 3060000},
